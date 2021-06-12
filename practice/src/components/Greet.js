@@ -1,12 +1,12 @@
 import React from "react";
 
-function Greet(props) {
+function Greet({ firstname, lastname, children }) {
   return (
     <div>
       <h1>
-        Hello {props.firstname} {props.lastname}
+        Hello {firstname} {lastname}
       </h1>
-      {props.children}
+      {children}
     </div>
   );
 }
